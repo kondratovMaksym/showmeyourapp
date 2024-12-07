@@ -1,7 +1,7 @@
 "use client";
 import handleDelete from "@/functions/handleDelete";
 import styles from "@/styles/deleteBtn.module.css";
-
+//
 interface Site {
   id: number;
   link: string;
