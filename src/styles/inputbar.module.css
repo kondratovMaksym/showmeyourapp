@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input {
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid lightblue;
+  outline: none;
+  transition: 1s all;
+}
+
+.displayDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggestions {
+  position: absolute; /* Сделаем позиционирование абсолютным */
+  top: 100%;
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translateX(
+    -50%
+  ); /* Корректируем позицию для точного центрирования */
+  width: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 200px; /* Максимальная высота для списка */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  z-index: 10;
+  margin-top: 2px;
+  border-radius: 15px;
+}
+
+.suggestionItem {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo p {
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .input {
+    width: 350px;
+  }
+  .suggestions {
+    width: 365px;
+  }
+}

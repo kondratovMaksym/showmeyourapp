@@ -1,0 +1,10 @@
+.component {
+  height: 35px; /* 7 x 0.25rem */
+  width: 35px; /* 7 x 0.25rem */
+  border-radius: 50%; /* rounded-full */
+  background-color: #5050e2; /* bg-zinc-800 */
+  font-size: 0.75rem; /* text-xs */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+  align-items: center; /* items-center */
+}

@@ -1,0 +1,254 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.content {
+  display: flex;
+}
+.userInfo {
+  padding-top: 50px;
+  flex-basis: 40%;
+  width: 100%;
+  height: fit-content;
+  position: sticky; /* Sticky для закрепления */
+  top: 0; /* Останется сверху при прокрутке */
+}
+
+.userInfoContent {
+  padding-right: 30px;
+}
+.userProjects {
+  padding-top: 50px;
+  flex-basis: 60%;
+  width: 100%;
+  height: fit-content;
+}
+.component {
+  height: 100px; /* 7 x 0.25rem */
+  width: 100px; /* 7 x 0.25rem */
+  border-radius: 50%; /* rounded-full */
+  background-color: #5050e2; /* bg-zinc-800 */
+  font-size: 0.75rem; /* text-xs */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+  align-items: center; /* items-center */
+}
+.userPicture {
+  margin-bottom: 30px;
+}
+.userNameInfo {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.userDescription {
+  padding: 0px 70px 0px 70px;
+  white-space: normal; /* Разрешаем перенос слов */
+  word-wrap: break-word; /* Разбиваем длинные слова */
+  word-break: break-word; /* Для старых браузеров, чтобы разбивать слова */
+  line-height: 1.5; /* Чтобы строки не сливались */
+  max-height: 150px; /* Ограничиваем высоту */
+  overflow-y: auto; /* Вертикальная прокрутка, если контента больше */
+  line-height: 1.1;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+.userDescription.no-scroll {
+  overflow-y: hidden;
+}
+.userLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.editBtns {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.changeProfileBtn {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px 15px;
+  background-color: #3a4c7b;
+  color: white;
+  transition: 0.3s all;
+}
+.changeProfileBtn:hover {
+  background-color: #4e66a3;
+}
+.addPostBtn {
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px 15px;
+  background-color: #016833;
+  color: white;
+  transition: 0.3s all;
+}
+.addPostBtn:hover {
+  background-color: #009347;
+}
+.link {
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.link:hover {
+  transform: scale(1.1);
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.siteSquare {
+  width: 400px;
+  height: 210px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px;
+  box-shadow: 10px 5px 5px rgb(230, 230, 230);
+}
+.siteSquareBig {
+  box-sizing: border-box;
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px;
+  box-shadow: 10px 5px 5px rgb(230, 230, 230);
+}
+.topPart {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 10px;
+  color: black;
+  transition: 0.3s all;
+  white-space: nowrap; /* Убираем перенос слов */
+  overflow: hidden; /* Скрываем лишний текст */
+  text-overflow: ellipsis; /* Показываем эллипсис, если текст не помещается */
+  max-height: 50px; /* Ограничиваем высоту */
+  border-radius: 25px;
+}
+.topPart:hover {
+  transform: scale(1.1);
+  background-color: #e7e7e7;
+}
+.bottomPart {
+  flex-basis: 60%;
+}
+.siteIcon {
+  transition: 0.3s all;
+}
+.topPart:hover .siteIcon {
+  transform: rotateX(-25deg) rotateY(-25deg);
+}
+.bottomPart {
+  padding: 15px;
+  text-align: center;
+  white-space: normal; /* Разрешаем перенос слов */
+  word-wrap: break-word; /* Разбиваем длинные слова */
+  word-break: break-word; /* Для старых браузеров, чтобы разбивать слова */
+  line-height: 1.5; /* Чтобы строки не сливались */
+  max-height: 150px; /* Ограничиваем высоту */
+  overflow-y: auto; /* Вертикальная прокрутка, если контента больше */
+}
+.projects {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.noHeader {
+  text-align: center;
+  font-size: 30px;
+  min-height: 50vh;
+  padding-top: 130px;
+  padding-left: 300px;
+}
+@media (max-width: 1400px) {
+  .siteSquare {
+    width: 350px;
+  }
+  .siteSquareBig {
+    width: 350px;
+  }
+}
+@media (max-width: 1230px) {
+  .siteSquare {
+    width: 300px;
+  }
+  .siteSquareBig {
+    width: 300px;
+  }
+}
+@media (max-width: 1070px) {
+  .siteSquare {
+    width: 250px;
+  }
+  .siteSquareBig {
+    width: 250px;
+  }
+  .editBtns {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .userInfo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .userInfoContent {
+    padding-right: 0px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .projects {
+    justify-content: center;
+    align-items: center;
+  }
+  .siteSquare {
+    width: 350px;
+  }
+  .siteSquareBig {
+    width: 350px;
+  }
+  .editBtns {
+    width: 400px;
+  }
+  .userDescription {
+    width: 500px;
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 540px) {
+  .userDescription {
+    width: 400px;
+    padding: 0px 40px 0px 40px;
+  }
+}
+@media (max-width: 420px) {
+  .editBtns {
+    width: 350px;
+  }
+  .userDescription {
+    width: 350px;
+    padding: 0px 20px;
+  }
+}

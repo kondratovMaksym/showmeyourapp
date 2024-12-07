@@ -1,0 +1,15 @@
+.userDescription {
+  padding: 0px 70px 0px 70px;
+  white-space: normal; /* Разрешаем перенос слов */
+  word-wrap: break-word; /* Разбиваем длинные слова */
+  word-break: break-word; /* Для старых браузеров, чтобы разбивать слова */
+  line-height: 1.5; /* Чтобы строки не сливались */
+  max-height: 150px; /* Ограничиваем высоту */
+  overflow-y: auto; /* Вертикальная прокрутка, если контента больше */
+  line-height: 1.1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.userDescription.no-scroll {
+  overflow-y: hidden;
+}

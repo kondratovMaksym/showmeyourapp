@@ -1,0 +1,22 @@
+.deleteSite {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.deleteBtn {
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #c60000;
+  background-color: white;
+  transition: 0.3s all;
+  text-align: center;
+  transition: 0.3s all;
+}
+.deleteBtn:hover {
+  background-color: #c60000;
+  color: white;
+}
