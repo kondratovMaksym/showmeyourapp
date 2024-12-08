@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>404</h1>
       <p className={styles.message}>Page is not found</p>
-
+      {/*  */}
       <Link href="/" passHref>
         <button className={styles.homeButton}>Return</button>
       </Link>
