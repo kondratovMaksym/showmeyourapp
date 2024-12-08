@@ -86,7 +86,7 @@ const page = async ({ params }: { params: { id: string } }) => {
               type="url"
               defaultValue={userData.user_x || ""}
             />
-
+            {/*  */}
             <label className={styles.label}>LinkedIn Link:</label>
             <input
               name="linkedin"
