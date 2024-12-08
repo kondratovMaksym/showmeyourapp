@@ -52,6 +52,7 @@ const page = async ({ params }: { params: { id: string } }) => {
     });
     revalidatePath(`/user/${userData.id}`);
     redirect(`/user/${userData.id}`);
+    //
   };
   return (
     <div>
