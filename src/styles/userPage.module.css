@@ -178,7 +178,7 @@
   font-size: 30px;
   min-height: 50vh;
   padding-top: 130px;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 @media (max-width: 1400px) {
   .siteSquare {
