@@ -7,7 +7,7 @@ const roboto = Quicksand({
 });
 
 export const metadata = {
-  title: "ShowYourApp",
+  title: "ShowMeYourApp",
   description: "Created By Maksym Kondratov",
 };
 
